@@ -191,7 +191,7 @@ const Shop = () => {
                           {product.name}
                         </h3>
                         <div className="flex justify-between items-center mb-2">
-                          <span className="text-xl font-bold text-cyan-700">
+                          <span className="text-xl font-bold text-[#f77426]">
                             Ksh.{product.price.toLocaleString()}
                           </span>
                           <div className="flex items-center">
@@ -206,7 +206,7 @@ const Shop = () => {
                         </p>
                         <Button
                           variant="outline"
-                          className="w-full group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300"
+                          className="w-full group-hover:bg-[#f77426] group-hover:text-white transition-colors duration-300"
                         >
                           View Details
                           <ArrowRight className="ml-2 h-4 w-4" />

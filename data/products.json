@@ -1,597 +1,279 @@
 {
   "categories": {
-    "furniture": {
-      "name": "Furniture",
-      "description": "Timeless pieces that define spaces",
-      "image": "/images/shop/categories/furniture.jpg",
-      "subCategories": ["Sofas", "Tables", "Chairs", "Beds", "Storage"]
-    },
-    "decor": {
-      "name": "Decor Items",
-      "description": "Artistic touches that elevate rooms",
-      "image": "/images/shop/categories/decor.jpg",
-      "subCategories": ["Wall Art", "Vases", "Sculptures", "Mirrors", "Accents"]
-    },
-    "lighting": {
-      "name": "Lighting",
-      "description": "Illuminate your space with style",
-      "image": "/images/shop/categories/lighting.jpg",
+    "gaming_consoles": {
+      "name": "Gaming Consoles",
+      "description": "Latest gaming consoles from PlayStation",
+      "image": "/images/products/gaming-console.jpg",
       "subCategories": [
-        "Table Lamps",
-        "Chandeliers",
-        "Floor Lamps",
-        "Wall Lights",
-        "LED Systems"
+        "PS5",
+        "PS4",
+        "Controllers",
+        "Games",
+        "Gaming Accessories"
       ]
     },
-    "textiles": {
-      "name": "Textiles",
-      "description": "Soft furnishings that add comfort",
-      "image": "/images/shop/categories/textiles.jpg",
-      "subCategories": ["Curtains", "Rugs", "Cushions", "Throws", "Upholstery"]
-    },
-    "services": {
-      "name": "Design Services",
-      "description": "Professional interior design expertise",
-      "image": "/images/shop/categories/services.jpg",
+    "mobile_phones": {
+      "name": "Mobile Phones",
+      "description": "Latest smartphones and accessories",
+      "image": "/images/products/S25.jpg",
       "subCategories": [
-        "Consultations",
-        "3D Modeling",
-        "Space Planning",
-        "Color Schemes",
-        "Project Management"
+        "Apple",
+        "Samsung",
+        "Google",
+        "OnePlus",
+        "Phone Accessories"
+      ]
+    },
+    "televisions": {
+      "name": "Televisions",
+      "description": "High-end smart TVs for ultimate entertainment",
+      "image": "/images/products/samsung-qn.jpg",
+      "subCategories": [
+        "OLED TVs",
+        "QLED TVs",
+        "LED TVs",
+        "Smart TVs",
+        "TV Mounts"
+      ]
+    },
+    "gaming_accessories": {
+      "name": "Gaming Accessories",
+      "description": "Essential gaming peripherals and accessories",
+      "image": "/images/products/ps5-1.jpg",
+      "subCategories": [
+        "Headsets",
+        "Gaming Chairs",
+        "Storage",
+        "Cables",
+        "Controller Charging"
       ]
     }
   },
   "products": [
     {
-      "id": "sofa-001",
-      "name": "Modern Comfort Sofa",
-      "category": "furniture",
-      "subCategory": "Sofas",
-      "price": 2499.99,
-      "description": "A contemporary sofa that combines style with ultimate comfort. Perfect for modern living spaces.",
+      "id": "ps5-001",
+      "name": "PlayStation 5 Digital Edition",
+      "category": "gaming_consoles",
+      "subCategory": "PS5",
+      "price": 399.99,
+      "description": "Next-gen gaming console featuring lightning-fast loading, deeper immersion with haptic feedback, and stunning 4K graphics.",
       "features": [
-        "High-resilience foam cushions",
-        "Stain-resistant fabric",
-        "Solid wood frame",
-        "Customizable leg finish"
+        "825GB SSD Storage",
+        "4K-TV Gaming",
+        "HDR Technology",
+        "3D Audio",
+        "Ray Tracing Support"
       ],
-      "images": [
-        "/images/products/product-6.jpg",
-        "/images/products/product-7.jpg",
-        "/images/products/product-8.jpg"
-      ],
+      "images": ["/images/products/ps5-2.jpg", "/images/products/ps5-3.jpg"],
       "dimensions": {
-        "width": 220,
-        "height": 85,
-        "depth": 95,
+        "width": 39,
+        "height": 26,
+        "depth": 9.2,
         "unit": "cm"
       },
-      "materials": ["Premium fabric", "Solid oak", "High-density foam"],
+      "materials": ["Premium plastic", "Advanced cooling system"],
+      "inStock": true,
+      "leadTime": "1-2 weeks",
+      "rating": 4.9,
+      "reviews": 245
+    },
+    {
+      "id": "ps5-002",
+      "name": "DualSense Wireless Controller",
+      "category": "gaming_consoles",
+      "subCategory": "Controllers",
+      "price": 69.99,
+      "description": "Revolutionary controller featuring haptic feedback and adaptive triggers for PS5.",
+      "features": [
+        "Haptic Feedback",
+        "Adaptive Triggers",
+        "Built-in Microphone",
+        "USB-C Charging",
+        "Create Button"
+      ],
+      "images": [
+        "/images/products/dualsense.jpg",
+        "/images/products/gaming-pad.jpg"
+      ],
+      "dimensions": {
+        "width": 16,
+        "height": 10,
+        "depth": 6,
+        "unit": "cm"
+      },
+      "materials": ["High-grade plastic", "Rechargeable battery"],
+      "inStock": true,
+      "leadTime": "1 week",
+      "rating": 4.8,
+      "reviews": 189
+    },
+    {
+      "id": "ps4-001",
+      "name": "PlayStation 4 Pro",
+      "category": "gaming_consoles",
+      "subCategory": "PS4",
+      "price": 299.99,
+      "description": "4K gaming console with enhanced graphics and performance for immersive gaming experiences.",
+      "features": [
+        "4K Gaming",
+        "1TB Storage",
+        "HDR Support",
+        "Boost Mode",
+        "Enhanced Graphics"
+      ],
+      "images": ["/images/products/ps4-1.jpg", "/images/products/ps4-2.jpg"],
+      "dimensions": {
+        "width": 32.7,
+        "height": 5.5,
+        "depth": 29.5,
+        "unit": "cm"
+      },
+      "materials": ["Premium plastic", "Metal chassis"],
+      "inStock": true,
+      "leadTime": "1 week",
+      "rating": 4.7,
+      "reviews": 320
+    },
+    {
+      "id": "phone-001",
+      "name": "Samsung Galaxy S23 Ultra",
+      "category": "mobile_phones",
+      "subCategory": "Samsung",
+      "price": 1199.99,
+      "description": "Premium flagship smartphone with advanced camera system and S Pen functionality.",
+      "features": [
+        "200MP Camera",
+        "S Pen included",
+        "5G Capability",
+        "6.8\" Dynamic AMOLED",
+        "5000mAh Battery"
+      ],
+      "images": ["/images/products/s23.jpg", "/images/products/S25.jpg"],
+      "dimensions": {
+        "width": 7.8,
+        "height": 16.3,
+        "depth": 0.89,
+        "unit": "cm"
+      },
+      "materials": ["Gorilla Glass", "Aluminum frame"],
+      "inStock": true,
+      "leadTime": "1-2 weeks",
+      "rating": 4.9,
+      "reviews": 156
+    },
+    {
+      "id": "tv-001",
+      "name": "LG C2 65\" OLED TV",
+      "category": "televisions",
+      "subCategory": "OLED TVs",
+      "price": 1999.99,
+      "description": "Premium OLED TV with stunning picture quality and gaming features.",
+      "features": [
+        "4K OLED Display",
+        "120Hz Refresh Rate",
+        "HDMI 2.1",
+        "Dolby Vision",
+        "Game Optimizer"
+      ],
+      "images": ["/images/products/lg-c2.jpg", "/images/products/lg-c2.jpg"],
+      "dimensions": {
+        "width": 144.9,
+        "height": 83.9,
+        "depth": 5.1,
+        "unit": "cm"
+      },
+      "materials": ["OLED Panel", "Premium stand"],
       "inStock": true,
       "leadTime": "2-3 weeks",
       "rating": 4.8,
-      "reviews": 124
-    },
-    {
-      "id": "chair-001",
-      "name": "Nordic Dining Chair",
-      "category": "furniture",
-      "subCategory": "Chairs",
-      "price": 299.99,
-      "description": "Scandinavian-inspired dining chair with ergonomic design and natural materials.",
-      "features": [
-        "Ergonomic backrest",
-        "Natural wood construction",
-        "Comfortable seat cushion",
-        "Stackable design"
-      ],
-      "images": [
-        "/images/products/product-9.jpg",
-        "/images/products/product-10.jpg"
-      ],
-      "dimensions": {
-        "width": 45,
-        "height": 85,
-        "depth": 52,
-        "unit": "cm"
-      },
-      "materials": ["Oak wood", "Linen fabric"],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
-      "rating": 4.6,
       "reviews": 89
     },
     {
-      "id": "lamp-001",
-      "name": "Artisan Floor Lamp",
-      "category": "lighting",
-      "subCategory": "Floor Lamps",
-      "price": 449.99,
-      "description": "Handcrafted floor lamp with adjustable height and warm, ambient lighting.",
+      "id": "acc-001",
+      "name": "PS5 Pulse 3D Wireless Headset",
+      "category": "gaming_accessories",
+      "subCategory": "Headsets",
+      "price": 99.99,
+      "description": "Official PS5 wireless headset designed for 3D Audio with dual noise-cancelling microphones.",
       "features": [
-        "Adjustable height",
-        "Dimmable LED bulb",
-        "360° rotating shade",
-        "Brass finish details"
+        "3D Audio Support",
+        "Dual Microphones",
+        "Wireless Adapter",
+        "Rechargeable Battery",
+        "Quick Controls"
       ],
-      "images": [
-        "/images/products/product-11.jpg",
-        "/images/products/product-12.jpg"
-      ],
+      "images": ["/images/products/pulse-1.jpg", "/images/products/pulse.jpg"],
       "dimensions": {
-        "width": 35,
-        "height": 150,
-        "depth": 35,
+        "width": 18,
+        "height": 22,
+        "depth": 9,
         "unit": "cm"
       },
-      "materials": ["Brass", "Marble base", "Linen shade"],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
-      "rating": 4.7,
-      "reviews": 56
-    },
-    {
-      "id": "rug-001",
-      "name": "Geometric Wool Rug",
-      "category": "textiles",
-      "subCategory": "Rugs",
-      "price": 899.99,
-      "description": "Hand-knotted wool rug featuring contemporary geometric patterns.",
-      "features": [
-        "100% New Zealand wool",
-        "Hand-knotted construction",
-        "Colorfast dyes",
-        "Durable design"
-      ],
-      "images": [
-        "/images/products/product-13.jpg",
-        "/images/products/product-14.jpg"
-      ],
-      "dimensions": {
-        "width": 200,
-        "height": 1,
-        "depth": 300,
-        "unit": "cm"
-      },
-      "materials": ["New Zealand wool", "Natural dyes"],
-      "inStock": true,
-      "leadTime": "2-3 weeks",
-      "rating": 4.9,
-      "reviews": 78
-    },
-    {
-      "id": "mirror-001",
-      "name": "Sunburst Wall Mirror",
-      "category": "decor",
-      "subCategory": "Mirrors",
-      "price": 599.99,
-      "description": "Dramatic sunburst mirror that adds depth and light to any room.",
-      "features": [
-        "Hand-welded frame",
-        "Beveled mirror glass",
-        "Multiple finish options",
-        "Easy installation"
-      ],
-      "images": [
-        "/images/products/product-15.jpg",
-        "/images/products/product-16.jpg"
-      ],
-      "dimensions": {
-        "width": 90,
-        "height": 90,
-        "depth": 5,
-        "unit": "cm"
-      },
-      "materials": ["Iron", "Mirror glass", "Gold leaf finish"],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
-      "rating": 4.7,
-      "reviews": 45
-    },
-    {
-      "id": "table-001",
-      "name": "Minimalist Dining Table",
-      "category": "furniture",
-      "subCategory": "Tables",
-      "price": 1299.99,
-      "description": "Sleek dining table with clean lines and durable construction, perfect for modern dining spaces.",
-      "features": [
-        "Extendable design",
-        "Scratch-resistant surface",
-        "Sturdy construction",
-        "Seats 6-8 people"
-      ],
-      "images": [
-        "/images/products/product-17.jpg",
-        "/images/products/product-18.jpg"
-      ],
-      "dimensions": {
-        "width": 180,
-        "height": 75,
-        "depth": 90,
-        "unit": "cm"
-      },
-      "materials": ["Walnut veneer", "Steel frame"],
-      "inStock": true,
-      "leadTime": "2-3 weeks",
-      "rating": 4.8,
-      "reviews": 92
-    },
-    {
-      "id": "chandelier-001",
-      "name": "Crystal Cascade Chandelier",
-      "category": "lighting",
-      "subCategory": "Chandeliers",
-      "price": 2899.99,
-      "description": "Stunning crystal chandelier that creates a dramatic focal point with cascading light effects.",
-      "features": [
-        "Premium crystal elements",
-        "Dimmable LED lights",
-        "Remote controlled",
-        "Professional installation included"
-      ],
-      "images": [
-        "/images/products/product-19.jpg",
-        "/images/products/product-20.jpg"
-      ],
-      "dimensions": {
-        "width": 80,
-        "height": 100,
-        "depth": 80,
-        "unit": "cm"
-      },
-      "materials": ["Crystal", "Stainless steel", "LED lights"],
-      "inStock": true,
-      "leadTime": "3-4 weeks",
-      "rating": 4.9,
-      "reviews": 34
-    },
-    {
-      "id": "vase-001",
-      "name": "Ceramic Art Vase",
-      "category": "decor",
-      "subCategory": "Vases",
-      "price": 199.99,
-      "description": "Hand-crafted ceramic vase with unique glazing technique, perfect as a standalone art piece or for floral arrangements.",
-      "features": [
-        "Hand-crafted",
-        "Unique glaze pattern",
-        "Waterproof interior",
-        "Stable base"
-      ],
-      "images": [
-        "/images/products/product-21.jpg",
-        "/images/products/product-22.jpg"
-      ],
-      "dimensions": {
-        "width": 20,
-        "height": 40,
-        "depth": 20,
-        "unit": "cm"
-      },
-      "materials": ["Ceramic", "Artisan glaze"],
+      "materials": ["Premium plastic", "Cushioned earpads"],
       "inStock": true,
       "leadTime": "1 week",
       "rating": 4.7,
-      "reviews": 28
+      "reviews": 134
     },
     {
-      "id": "bed-001",
-      "name": "Finesse Executions Platform Bed",
-      "category": "furniture",
-      "subCategory": "Beds",
-      "price": 1899.99,
-      "description": "Modern platform bed with integrated lighting and storage, combining functionality with luxury.",
+      "id": "phone-002",
+      "name": "iPhone 14 Pro Max",
+      "category": "mobile_phones",
+      "subCategory": "Apple",
+      "price": 1099.99,
+      "description": "Apple's flagship smartphone with Dynamic Island and advanced camera system.",
       "features": [
-        "LED ambient lighting",
-        "Hidden storage compartments",
-        "Upholstered headboard",
-        "No box spring needed"
+        "48MP Main Camera",
+        "Dynamic Island",
+        "A16 Bionic Chip",
+        "ProMotion Display",
+        "5G Capability"
       ],
       "images": [
-        "/images/products/product-23.jpg",
-        "/images/products/product-24.jpg"
+        "/images/products/iphone-14.jpg",
+        "/images/products/iphone-14-1.jpg"
       ],
       "dimensions": {
-        "width": 200,
-        "height": 120,
-        "depth": 190,
+        "width": 7.7,
+        "height": 16.0,
+        "depth": 0.78,
         "unit": "cm"
       },
-      "materials": ["Engineered wood", "Premium fabric", "LED components"],
-      "inStock": true,
-      "leadTime": "2-3 weeks",
-      "rating": 4.8,
-      "reviews": 65
-    },
-    {
-      "id": "curtain-001",
-      "name": "Linen Blend Curtains",
-      "category": "textiles",
-      "subCategory": "Curtains",
-      "price": 249.99,
-      "description": "Elegant linen blend curtains that provide the perfect balance of light filtering and privacy.",
-      "features": [
-        "Light filtering",
-        "Thermal insulation",
-        "Noise reduction",
-        "Easy care fabric"
-      ],
-      "images": [
-        "/images/products/product-1.jpg",
-        "/images/products/product-2.jpg"
-      ],
-      "dimensions": {
-        "width": 140,
-        "height": 250,
-        "depth": 0,
-        "unit": "cm"
-      },
-      "materials": ["Linen blend", "Premium cotton"],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
-      "rating": 4.6,
-      "reviews": 42
-    },
-    {
-      "id": "art-001",
-      "name": "Abstract Canvas Triptych",
-      "category": "decor",
-      "subCategory": "Wall Art",
-      "price": 899.99,
-      "description": "Contemporary abstract triptych in soothing coastal tones. Hand-painted on premium canvas with gallery-quality framing.",
-      "features": [
-        "Original hand-painted artwork",
-        "Gallery-wrapped canvas",
-        "UV-protective coating",
-        "Professional mounting hardware included"
-      ],
-      "images": [
-        "/images/products/product-3.jpg",
-        "/images/products/product-4.jpg",
-        "/images/products/product-5.jpg"
-      ],
-      "dimensions": {
-        "width": 150,
-        "height": 80,
-        "depth": 4,
-        "unit": "cm"
-      },
-      "materials": ["Canvas", "Acrylic paint", "Wooden frame"],
+      "materials": ["Ceramic Shield", "Stainless Steel"],
       "inStock": true,
       "leadTime": "1-2 weeks",
       "rating": 4.9,
-      "reviews": 37
+      "reviews": 203
     },
     {
-      "id": "sculpture-001",
-      "name": "Bronze Abstract Figure",
-      "category": "decor",
-      "subCategory": "Sculptures",
-      "price": 1299.99,
-      "description": "Modern bronze sculpture capturing fluid movement in abstract human form. Each piece is individually cast and finished by hand.",
+      "id": "tv-002",
+      "name": "Samsung QN90B Neo QLED 4K",
+      "category": "televisions",
+      "subCategory": "QLED TVs",
+      "price": 1799.99,
+      "description": "Premium QLED TV with Mini LED technology and gaming features.",
       "features": [
-        "Limited edition",
-        "Hand-finished patina",
-        "Numbered certificate",
-        "Custom marble base"
+        "Neo QLED Technology",
+        "4K 120Hz",
+        "HDR10+",
+        "Gaming Hub",
+        "Object Tracking Sound"
       ],
       "images": [
-        "/images/products/product-6.jpg",
-        "/images/products/product-7.jpg"
+        "/images/products/samsung-qn.jpg",
+        "/images/products/samsung-qn-1.jpg"
       ],
       "dimensions": {
-        "width": 30,
-        "height": 60,
-        "depth": 25,
+        "width": 123.5,
+        "height": 71.2,
+        "depth": 2.6,
         "unit": "cm"
       },
-      "materials": ["Bronze", "Marble base"],
-      "inStock": true,
-      "leadTime": "3-4 weeks",
-      "rating": 4.8,
-      "reviews": 19
-    },
-    {
-      "id": "art-002",
-      "name": "Geometric Metal Wall Art",
-      "category": "decor",
-      "subCategory": "Wall Art",
-      "price": 599.99,
-      "description": "Contemporary geometric metal wall sculpture with a brushed gold finish. Creates stunning shadow patterns with ambient lighting.",
-      "features": [
-        "3D geometric design",
-        "Brushed gold finish",
-        "Easy installation",
-        "LED spotlight compatible"
-      ],
-      "images": [
-        "/images/products/product-8.jpg",
-        "/images/products/product-9.jpg"
-      ],
-      "dimensions": {
-        "width": 100,
-        "height": 100,
-        "depth": 12,
-        "unit": "cm"
-      },
-      "materials": ["Aluminum", "Steel mounting hardware"],
+      "materials": ["QLED Panel", "Premium stand"],
       "inStock": true,
       "leadTime": "2-3 weeks",
-      "rating": 4.7,
-      "reviews": 45
-    },
-    {
-      "id": "sculpture-002",
-      "name": "Glass Wave Sculpture",
-      "category": "decor",
-      "subCategory": "Sculptures",
-      "price": 799.99,
-      "description": "Handblown glass sculpture capturing the essence of ocean waves. Each piece is unique with subtle variations in color and form.",
-      "features": [
-        "Handblown glass",
-        "Unique color variations",
-        "LED-lit base included",
-        "Artist signed"
-      ],
-      "images": [
-        "/images/products/product-10.jpg",
-        "/images/products/product-11.jpg"
-      ],
-      "dimensions": {
-        "width": 45,
-        "height": 35,
-        "depth": 20,
-        "unit": "cm"
-      },
-      "materials": ["Murano glass", "LED-lit acrylic base"],
-      "inStock": true,
-      "leadTime": "2-3 weeks",
-      "rating": 4.9,
-      "reviews": 28
-    },
-    {
-      "id": "service-001",
-      "name": "Complete Room Design Package",
-      "category": "services",
-      "subCategory": "Consultations",
-      "price": 1499.99,
-      "description": "Comprehensive room design service including concept development, space planning, and detailed implementation guide.",
-      "features": [
-        "Initial consultation",
-        "3D room visualization",
-        "Furniture layout plan",
-        "Color scheme selection",
-        "Shopping list with budget breakdown"
-      ],
-      "images": [
-        "/images/products/product-12.jpg",
-        "/images/products/product-13.jpg"
-      ],
-      "materials": ["Digital design files", "Printed documentation"],
-      "inStock": true,
-      "leadTime": "2-3 weeks",
-      "rating": 5.0,
-      "reviews": 42
-    },
-    {
-      "id": "art-003",
-      "name": "Botanical Print Collection",
-      "category": "decor",
-      "subCategory": "Wall Art",
-      "price": 399.99,
-      "description": "Set of six vintage-inspired botanical prints, professionally framed in minimalist gold frames.",
-      "features": [
-        "Archival quality prints",
-        "Anti-glare glass",
-        "Custom gold frames",
-        "Ready to hang"
-      ],
-      "images": [
-        "/images/products/product-14.jpg",
-        "/images/products/product-15.jpg"
-      ],
-      "dimensions": {
-        "width": 30,
-        "height": 40,
-        "depth": 2,
-        "unit": "cm"
-      },
-      "materials": [
-        "Archival paper",
-        "Gold-finished frames",
-        "Anti-glare glass"
-      ],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
       "rating": 4.8,
-      "reviews": 65
-    },
-    {
-      "id": "service-002",
-      "name": "3D Visualization Package",
-      "category": "services",
-      "subCategory": "3D Modeling",
-      "price": 799.99,
-      "description": "Photorealistic 3D renderings of your space with different design options and virtual walk-through.",
-      "features": [
-        "Multiple view angles",
-        "Different lighting scenarios",
-        "Material and finish options",
-        "Virtual walk-through video",
-        "Revisions included"
-      ],
-      "images": [
-        "/images/products/product-16.jpg",
-        "/images/products/product-17.jpg"
-      ],
-      "materials": ["Digital files", "4K resolution renders"],
-      "inStock": true,
-      "leadTime": "1-2 weeks",
-      "rating": 4.9,
-      "reviews": 31
-    },
-    {
-      "id": "storage-001",
-      "name": "Modular Wall Storage System",
-      "category": "furniture",
-      "subCategory": "Storage",
-      "price": 1899.99,
-      "description": "Customizable wall-mounted storage system with mix-and-match components for ultimate flexibility.",
-      "features": [
-        "Modular design",
-        "Wall-mounted system",
-        "Multiple configuration options",
-        "Integrated LED lighting",
-        "Cable management"
-      ],
-      "images": [
-        "/images/products/product-18.jpg",
-        "/images/products/product-19.jpg"
-      ],
-      "dimensions": {
-        "width": 240,
-        "height": 200,
-        "depth": 40,
-        "unit": "cm"
-      },
-      "materials": ["Oak veneer", "Aluminum", "Tempered glass"],
-      "inStock": true,
-      "leadTime": "3-4 weeks",
-      "rating": 4.7,
-      "reviews": 23
-    },
-    {
-      "id": "light-001",
-      "name": "Smart LED Strip System",
-      "category": "lighting",
-      "subCategory": "LED Systems",
-      "price": 299.99,
-      "description": "Professional-grade LED strip lighting system with smart controls and infinite color options.",
-      "features": [
-        "Smart home compatible",
-        "16 million colors",
-        "Scene programming",
-        "Music sync capability",
-        "Voice control support"
-      ],
-      "images": [
-        "/images/products/product-20.jpg",
-        "/images/products/product-21.jpg"
-      ],
-      "dimensions": {
-        "width": 5,
-        "height": 0.2,
-        "depth": 500,
-        "unit": "cm"
-      },
-      "materials": ["LED strips", "Aluminum channels", "Smart controller"],
-      "inStock": true,
-      "leadTime": "1 week",
-      "rating": 4.8,
-      "reviews": 87
+      "reviews": 76
     }
   ]
 }

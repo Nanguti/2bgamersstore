@@ -166,7 +166,7 @@ const About = () => {
               >
                 <Card className="text-center h-full bg-white/50 dark:bg-gray-900/50 backdrop-blur-lg">
                   <CardContent className="p-6">
-                    <achievement.icon className="w-8 h-8 mx-auto mb-4 text-cyan-700" />
+                    <achievement.icon className="w-8 h-8 mx-auto mb-4 text-[#f77426]" />
                     <h3 className="text-4xl font-bold mb-2 dark:text-white">
                       {achievement.number}
                     </h3>
@@ -232,7 +232,7 @@ const About = () => {
                   duration-300"
                   >
                     <CardContent className="p-6">
-                      <span className="text-cyan-700 font-bold text-xl mb-2 block">
+                      <span className="text-[#f77426] font-bold text-xl mb-2 block">
                         {event.year}
                       </span>
                       <h3 className="text-xl font-semibold mb-2 dark:text-white">
@@ -246,7 +246,7 @@ const About = () => {
                 </div>
 
                 {/* Timeline Dot */}
-                <div className="hidden md:block w-4 h-4 bg-cyan-700 rounded-full absolute left-1/2 transform -translate-x-1/2" />
+                <div className="hidden md:block w-4 h-4 bg-[#f77426] rounded-full absolute left-1/2 transform -translate-x-1/2" />
               </motion.div>
             ))}
           </div>

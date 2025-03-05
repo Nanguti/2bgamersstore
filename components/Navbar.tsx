@@ -36,10 +36,8 @@ const Navbar = () => {
               {[
                 "Home",
                 "About",
-                "Services",
                 "Shop",
                 "Collections",
-                "Portfolio",
                 "Contact",
                 "Checkout",
               ].map((item) => (
@@ -48,7 +46,7 @@ const Navbar = () => {
                     href={`/${
                       item.toLowerCase() === "home" ? "" : item.toLowerCase()
                     }`}
-                    className="hover:text-cyan-500 transition-colors"
+                    className="hover:text-[#f77426] transition-colors"
                   >
                     {item}
                   </Link>
@@ -86,7 +84,7 @@ const Navbar = () => {
                     <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      className="absolute -top-2 -right-2 bg-cyan-700 text-white text-xs rounded-full w-5 h-5 flex items-center 
+                      className="absolute -top-2 -right-2 bg-[#f77426] text-white text-xs rounded-full w-5 h-5 flex items-center 
                       justify-center"
                     >
                       {itemCount}
@@ -125,7 +123,7 @@ const Navbar = () => {
               href={`/${
                 item.toLowerCase() === "home" ? "" : item.toLowerCase()
               }`}
-              className="block py-2 hover:text-cyan-500"
+              className="block py-2 hover:text-[#f77426]"
               onClick={() => setIsMenuOpen(false)}
             >
               {item}

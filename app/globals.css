@@ -77,7 +77,7 @@ body {
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-200;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-[#f77426];
   }
 
   .glass-card {
@@ -90,6 +90,6 @@ body {
   }
 
   .section-gradient {
-    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-cyan-900;
+    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-[#f77426];
   }
 }

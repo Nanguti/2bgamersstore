@@ -76,7 +76,7 @@ const Checkout = () => {
                 <div className="flex items-center mb-8">
                   <div
                     className={`flex items-center ${
-                      step === "shipping" ? "text-cyan-700" : "text-gray-400"
+                      step === "shipping" ? "text-[#f77426]" : "text-gray-400"
                     }`}
                   >
                     <Truck className="h-5 w-5 mr-2" />
@@ -85,7 +85,7 @@ const Checkout = () => {
                   <div className="h-px bg-gray-200 w-12 mx-4" />
                   <div
                     className={`flex items-center ${
-                      step === "payment" ? "text-cyan-700" : "text-gray-400"
+                      step === "payment" ? "text-[#f77426]" : "text-gray-400"
                     }`}
                   >
                     <CreditCard className="h-5 w-5 mr-2" />
@@ -105,7 +105,7 @@ const Checkout = () => {
                           name="firstName"
                           value={shippingInfo.firstName}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -118,7 +118,7 @@ const Checkout = () => {
                           name="lastName"
                           value={shippingInfo.lastName}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -134,7 +134,7 @@ const Checkout = () => {
                           name="email"
                           value={shippingInfo.email}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -147,7 +147,7 @@ const Checkout = () => {
                           name="phone"
                           value={shippingInfo.phone}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -162,7 +162,7 @@ const Checkout = () => {
                         name="address"
                         value={shippingInfo.address}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                        className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                         required
                       />
                     </div>
@@ -177,7 +177,7 @@ const Checkout = () => {
                           name="city"
                           value={shippingInfo.city}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -189,7 +189,7 @@ const Checkout = () => {
                           name="country"
                           value={shippingInfo.country}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         >
                           <option value="">Select Country</option>
@@ -207,7 +207,7 @@ const Checkout = () => {
                           name="postalCode"
                           value={shippingInfo.postalCode}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-cyan-500"
+                          className="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-[#f77426]"
                           required
                         />
                       </div>
@@ -215,7 +215,7 @@ const Checkout = () => {
 
                     <Button
                       type="submit"
-                      className="w-full bg-cyan-700 hover:bg-cyan-800"
+                      className="w-full bg-[#f77426] hover:bg-[#e56315]"
                     >
                       Continue to Payment
                     </Button>

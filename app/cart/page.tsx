@@ -116,7 +116,7 @@ const Cart = () => {
                     <span>Ksh. {total.toLocaleString()}</span>
                   </div>
                   <Link href="/checkout">
-                    <Button className="w-full bg-cyan-700 hover:bg-cyan-800">
+                    <Button className="w-full bg-[#f77426] hover:bg-[#e56315]">
                       Proceed to Checkout
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>

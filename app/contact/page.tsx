@@ -282,7 +282,7 @@ const Contact = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-cyan-700 hover:bg-cyan-800 text-white"
+                    className="w-full bg-[#f77426] hover:bg-[#e56315] text-white"
                   >
                     Send Message
                     <Send className="ml-2 h-4 w-4" />

@@ -112,7 +112,7 @@ const ProductPage = ({ params }: PageProps) => {
                 {product.name}
               </h1>
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-2xl font-bold text-cyan-700">
+                <span className="text-2xl font-bold text-[#f77426]">
                   Ksh. {product.price.toLocaleString()}
                 </span>
                 <div className="flex items-center">
@@ -202,7 +202,7 @@ const ProductPage = ({ params }: PageProps) => {
                 </div>
                 <Button
                   onClick={handleAddToCart}
-                  className="flex-1 bg-cyan-700 hover:bg-cyan-800"
+                  className="flex-1 bg-[#f77426] hover:bg-[#e56315]"
                   disabled={!product.inStock}
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />

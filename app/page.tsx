@@ -16,8 +16,6 @@ const fadeIn = {
 
 const Home = () => {
   const { products, loading } = useProducts();
-
-  // Get top 6 products sorted by rating
   const topProducts = products.sort((a, b) => b.rating - a.rating).slice(0, 6);
 
   const collections = [
@@ -74,7 +72,7 @@ const Home = () => {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/hero-gaming.jpg"
+            src="/images/banners/hero-banner.jpg"
             alt="Gaming setup with RGB lighting"
             fill
             className="object-cover"
@@ -183,7 +181,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/products">
+            <Link href="/shop">
               <Button variant="outline" size="lg">
                 View All Products
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -361,7 +359,7 @@ const Home = () => {
                           {product.name}
                         </h3>
                         <div className="flex justify-between items-center mb-2">
-                          <span className="text-xl font-bold text-cyan-700">
+                          <span className="text-xl font-bold text-[#f77426]">
                             Ksh. {product.price.toLocaleString()}
                           </span>
                           <div className="flex items-center">
@@ -373,7 +371,7 @@ const Home = () => {
                         </div>
                         <Button
                           variant="outline"
-                          className="w-full group-hover:bg-cyan-700 group-hover:text-white transition-colors duration-300"
+                          className="w-full group-hover:bg-[#f77426] group-hover:text-white transition-colors duration-300"
                         >
                           View Details
                           <ArrowRight className="ml-2 h-4 w-4" />
