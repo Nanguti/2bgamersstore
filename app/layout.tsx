@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import { ThemeProvider } from "./components/layout/ThemeProvider";
+import Footer from "@/components/Footer";
+import { Providers } from "./providers";
+import { CartHydration } from "@/components/CartHydration";
+import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// Load Inter for body text and Lora for elegant headings
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
 
 export const metadata: Metadata = {
-  title: "Futuristic eCommerce Experience",
-  description: "Modern, immersive online shopping platform",
+  title: "Finesse Executions KE",
+  description: "Transform your space with luxury interior design services",
 };
 
 export default function RootLayout({
@@ -18,23 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} bg-background text-foreground antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-          storageKey="technova-theme"
-        >
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            <main className="flex-grow">{children}</main>
+    <html lang="en">
+      <body className={`${lora.variable} ${inter.variable}  font-sans`}>
+        <Providers>
+          <CartHydration />
+          <div className="min-h-screen">
+            <Navbar />
+            {children}
             <Footer />
           </div>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
