@@ -448,7 +448,7 @@ const Home = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Why Choose Us</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            At 2b Gamers Store, we're passionate about gaming. We offer the
+            At 2b Gamers Store, we are passionate about gaming. We offer the
             latest gaming gear, expert advice, and a community-focused approach
             to help you find exactly what you need to enhance your gaming
             experience.
@@ -509,7 +509,7 @@ const Home = () => {
             Ready to Level Up?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            Visit our store or get in touch with our gaming experts. We're here
+            Visit our store or get in touch with our gaming experts. We are here
             to help you find the perfect gaming setup that matches your style
             and budget.
           </p>
