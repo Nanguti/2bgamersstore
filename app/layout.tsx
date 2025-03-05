@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 import { Providers } from "./providers";
 import { CartHydration } from "@/components/CartHydration";
 import Navbar from "@/components/Navbar";
-
+import { Suspense } from "react";
+import Loading from "./loading";
 // Load Inter for body text and Lora for elegant headings
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
@@ -27,7 +28,7 @@ export default function RootLayout({
           <CartHydration />
           <div className="min-h-screen">
             <Navbar />
-            {children}
+            <Suspense fallback={<Loading />}>{children}</Suspense>
             <Footer />
           </div>
         </Providers>
