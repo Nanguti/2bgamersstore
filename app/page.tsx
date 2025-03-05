@@ -22,44 +22,44 @@ const Home = () => {
 
   const collections = [
     {
-      title: "Modern Minimalist",
-      image: "/images/featured-collections/featured-1.jpg",
-      description: "Clean lines and purposeful spaces",
+      title: "PC Gaming",
+      image: "/images/featured/featured-1.jpg",
+      description: "High-performance gaming rigs and accessories",
     },
     {
-      title: "Scandinavian",
-      image: "/images/featured-collections/featured-2.jpg",
-      description: "Light, airy, and functional design",
+      title: "Console Gaming",
+      image: "/images/featured/featured-4.jpg",
+      description: "Latest consoles and exclusive titles",
     },
     {
-      title: "Industrial Chic",
-      image: "/images/featured-collections/featured-3.jpg",
-      description: "Raw materials meet refined style",
+      title: "Mobile Gaming",
+      image: "/images/featured/featured-3.png",
+      description: "Mobile gaming gear and peripherals",
     },
     {
-      title: "Bohemian Living",
-      image: "/images/featured-collections/featured-4.jpg",
-      description: "Free-spirited and eclectic spaces",
+      title: "Retro Gaming",
+      image: "/images/featured/featured-5.jpg",
+      description: "Classic consoles and vintage games",
     },
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      text: "Transformed our space beyond expectations. The attention to detail was remarkable.",
+      name: "Alex Thompson",
+      text: "Best gaming store in town! Their selection of PC components is unmatched, and the staff really knows their stuff.",
     },
     {
-      name: "Michael Chen",
-      text: "Professional, creative, and truly understood our vision. Highly recommended!",
+      name: "Sarah Chen",
+      text: "Found some rare retro games I've been hunting for years. The prices are fair and the community events are awesome!",
     },
     {
-      name: "Emma Williams",
-      text: "The perfect blend of functionality and style. Our home feels completely renewed.",
+      name: "Mike Rodriguez",
+      text: "Their gaming setup advice was invaluable. Helped me build my dream streaming station within budget.",
     },
   ];
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -74,8 +74,8 @@ const Home = () => {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/hero-1.jpg"
-            alt="Hero background"
+            src="/images/hero-gaming.jpg"
+            alt="Gaming setup with RGB lighting"
             fill
             className="object-cover"
             priority
@@ -89,7 +89,7 @@ const Home = () => {
             transition={{ delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            Transform Your Space
+            Level Up Your Game
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -97,7 +97,7 @@ const Home = () => {
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl mb-8"
           >
-            Where luxury meets comfort in every detail
+            Your one-stop shop for all things gaming
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -107,9 +107,9 @@ const Home = () => {
             <Link href="/collections">
               <Button
                 size="lg"
-                className="bg-white text-gray-900 hover:bg-gray-100"
+                className="bg-[#f77426] text-white hover:bg-[#e56315]"
               >
-                Explore Collections
+                Browse Collections
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -117,7 +117,7 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* Recent Projects Section */}
+      {/* Recent Products Section */}
       <section className="py-20 px-4">
         <motion.div
           initial="initial"
@@ -127,27 +127,27 @@ const Home = () => {
           className="max-w-7xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Recent Projects
+            Featured Products
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Modern Apartment",
-                location: "Nairobi CBD",
-                image: "/images/projects/project-1.jpg",
-                category: "Residential",
+                title: "Gaming PCs",
+                location: "Custom Builds",
+                image: "/images/featured/featured-6.jpg",
+                category: "Hardware",
               },
               {
-                title: "Luxury Office",
-                location: "Westlands",
-                image: "/images/projects/project-2.jpg",
-                category: "Commercial",
+                title: "Gaming Peripherals",
+                location: "Pro Gear",
+                image: "/images/featured/featured-7.jpg",
+                category: "Accessories",
               },
               {
-                title: "Boutique Hotel",
-                location: "Mombasa",
-                image: "/images/projects/project-3.jpg",
-                category: "Hospitality",
+                title: "Latest Games",
+                location: "New Releases",
+                image: "/images/featured/featured-4.jpg",
+                category: "Software",
               },
             ].map((project, index) => (
               <motion.div
@@ -174,7 +174,7 @@ const Home = () => {
                       {project.title}
                     </h3>
                     <p className="text-white/80">{project.location}</p>
-                    <span className="text-sm text-cyan-400 mt-2">
+                    <span className="text-sm text-[#f77426] mt-2">
                       {project.category}
                     </span>
                   </div>
@@ -183,9 +183,9 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/portfolio">
+            <Link href="/products">
               <Button variant="outline" size="lg">
-                View All Projects
+                View All Products
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -193,7 +193,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* Design Process Section */}
+      {/* Gaming Categories Section */}
       <section className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
         <motion.div
           initial="initial"
@@ -203,40 +203,40 @@ const Home = () => {
           className="max-w-7xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            Our Design Process
+            Gaming Categories
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
             {[
               {
                 step: "01",
-                title: "Consultation",
+                title: "PC Gaming",
                 description:
-                  "Understanding your vision, needs, and style preferences",
-                icon: "💭",
+                  "High-end gaming rigs, components, and accessories",
+                icon: "🖥️",
               },
               {
                 step: "02",
-                title: "Concept Development",
+                title: "Console Gaming",
                 description:
-                  "Creating detailed design concepts and mood boards",
-                icon: "✏️",
+                  "Latest consoles, controllers, and exclusive titles",
+                icon: "🎮",
               },
               {
                 step: "03",
-                title: "Implementation",
+                title: "Mobile Gaming",
                 description:
-                  "Bringing designs to life with expert craftsmanship",
-                icon: "��",
+                  "Mobile controllers, power banks, and gaming phones",
+                icon: "📱",
               },
               {
                 step: "04",
-                title: "Final Touches",
-                description: "Perfecting every detail for a stunning result",
-                icon: "✨",
+                title: "Retro Gaming",
+                description: "Classic consoles, games, and collectibles",
+                icon: "🕹️",
               },
-            ].map((process, index) => (
+            ].map((category, index) => (
               <motion.div
-                key={process.step}
+                key={category.step}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -255,19 +255,19 @@ const Home = () => {
                       className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl 
                       transition-shadow duration-300 h-full border border-gray-100 dark:border-gray-700"
                     >
-                      <div className="text-4xl mb-4">{process.icon}</div>
+                      <div className="text-4xl mb-4">{category.icon}</div>
                       <div
-                        className="absolute -top-4 -right-4 w-12 h-12 bg-cyan-700 rounded-full 
+                        className="absolute -top-4 -right-4 w-12 h-12 bg-[#f77426] rounded-full 
                       flex items-center justify-center text-white font-bold transform 
                       group-hover:rotate-12 transition-transform duration-300"
                       >
-                        {process.step}
+                        {category.step}
                       </div>
                       <h3 className="text-xl font-semibold mb-3 dark:text-white">
-                        {process.title}
+                        {category.title}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        {process.description}
+                        {category.description}
                       </p>
                     </motion.div>
                   </div>
@@ -282,7 +282,7 @@ const Home = () => {
                       whileInView={{ width: "100%" }}
                       transition={{ duration: 0.8, delay: index * 0.2 }}
                       viewport={{ once: true }}
-                      className="h-0.5 bg-gradient-to-r from-cyan-700 to-cyan-500"
+                      className="h-0.5 bg-gradient-to-r from-[#f77426] to-[#f77426]/50"
                     />
                   </div>
                 )}
@@ -297,12 +297,12 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mt-16"
           >
-            <Link href="/contact">
+            <Link href="/categories">
               <Button
                 size="lg"
-                className="bg-cyan-700 hover:bg-cyan-800 text-white"
+                className="bg-[#f77426] hover:bg-[#e56315] text-white"
               >
-                Start Your Design Journey
+                Explore Categories
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -448,12 +448,12 @@ const Home = () => {
           variants={fadeIn}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Our Approach</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Why Choose Us</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            We believe that every space tells a story. Our design philosophy
-            combines timeless elegance with contemporary innovation, creating
-            environments that reflect your unique style and elevate your daily
-            living experience.
+            At 2b Gamers Store, we're passionate about gaming. We offer the
+            latest gaming gear, expert advice, and a community-focused approach
+            to help you find exactly what you need to enhance your gaming
+            experience.
           </p>
           <Link href="/about">
             <Button variant="outline" size="lg">
@@ -508,18 +508,19 @@ const Home = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Ready to Transform Your Space?
+            Ready to Level Up?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            We&apos;d love to hear from you. Our friendly team is always here to
-            chat about your ideas and bring them to life.
+            Visit our store or get in touch with our gaming experts. We're here
+            to help you find the perfect gaming setup that matches your style
+            and budget.
           </p>
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-cyan-700 hover:bg-cyan-800 text-white"
+              className="bg-[#f77426] hover:bg-[#e56315] text-white"
             >
-              Book a Consultation
+              Contact Us
             </Button>
           </Link>
         </motion.div>
@@ -540,20 +541,21 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Interior Design",
+                title: "Custom PC Builds",
                 description:
-                  "Full-service interior design for residential and commercial spaces",
-                icon: "🎨",
+                  "Custom gaming rigs built to your specifications and budget",
+                icon: "🔧",
               },
               {
-                title: "Space Planning",
-                description: "Optimize your space for functionality and flow",
-                icon: "",
+                title: "Tech Support",
+                description:
+                  "Expert technical support and hardware troubleshooting",
+                icon: "🛠️",
               },
               {
-                title: "Custom Furniture",
-                description: "Bespoke furniture design and manufacturing",
-                icon: "🪑",
+                title: "Trade-In Program",
+                description: "Trade your old gaming gear for store credit",
+                icon: "🔄",
               },
             ].map((service, index) => (
               <motion.div
@@ -575,7 +577,7 @@ const Home = () => {
                     </p>
                     <Button
                       variant="outline"
-                      className="group-hover:bg-cyan-700 group-hover:text-white"
+                      className="group-hover:bg-[#f77426] group-hover:text-white"
                     >
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />

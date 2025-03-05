@@ -91,7 +91,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h2 className="text-xl font-bold mb-4 dark:text-white">
-              <Link href="/">~Finesse Executions KE</Link>
+              <Link href="/">2B Gamers Store</Link>
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               Transforming spaces into extraordinary experiences through
@@ -176,8 +176,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              © {new Date().getFullYear()} Finesse Executions KE. All rights
-              reserved.
+              © {new Date().getFullYear()} 2B Gamers Store. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link

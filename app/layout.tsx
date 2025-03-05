@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
 
 export const metadata: Metadata = {
-  title: "Finesse Executions KE",
+  title: "2B Gamers Store",
   description: "Transform your space with luxury interior design services",
 };
 

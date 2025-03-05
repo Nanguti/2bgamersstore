@@ -29,7 +29,7 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               className="text-xl font-bold"
             >
-              <Link href="/">Finesse Executions KE</Link>
+              <Link href="/">2B Gamers Store</Link>
             </motion.div>
 
             <div className="hidden md:flex space-x-8">
